@@ -5,6 +5,7 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* navigation bar section*/
 .navbar__container {
   height: 5rem;
 }
@@ -22,14 +23,11 @@
   font-size: 20px;
 }
 
+/* search and add task section */
 .search_container {
   position: relative;
   margin-top: 3rem;
   padding: 3rem 6rem;
-}
-
-.card_container {
-  padding: 3rem 13rem;
 }
 
 .input-group .btn {
@@ -52,12 +50,21 @@
   color: white;
 }
 
+/* cards container section */
+.card_container {
+  padding: 3rem 13rem;
+}
+
+
 @media screen and (max-width: 720px) {
+
+  /* navigation bar section*/
   .navbar-collapse ul li a {
     color: white;
     font-size: 22px;
     font-weight: 600;
   }
+
   .navbar-collapse ul li {
     padding: 0 2rem;
     border-bottom: 2px solid #ffffff50;
@@ -65,9 +72,11 @@
     display: flex;
     justify-content: flex-end;
   }
+
   .navbar-collapse ul li:hover {
     background-color: #2b3134e0;
   }
+
   .navbar-collapse .navbar-nav {
     align-items: flex-end;
     background-color: #2b3134;
@@ -75,9 +84,12 @@
     height: auto;
     z-index: 1;
   }
+
+  /* search and add task section */
   .container-fluid .navbar-brand {
     font-size: 40px;
   }
+
   .container-fluid .title {
     display: flex;
     justify-content: space-between;
@@ -85,13 +97,18 @@
     width: 100%;
     border-bottom: 2px solid #ffffff50;
   }
+
   .search_container .input_container {
     width: 90% !important;
   }
-  .card_container {
-    padding: 1rem 2rem;
-  }
+
   .input-group .btn-outline {
     z-index: 0 !important;
   }
+
+  /* cards container section */
+  .card_container {
+    padding: 1rem 2rem;
+  }
+
 }

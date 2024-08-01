@@ -29,6 +29,7 @@
     />
   </head>
   <body>
+    <!-- navigation bar section starts here-->
     <section class="navbar__container p-0 m-0">
       <nav
         class="navbar navbar-expand-lg bg-body-tertiary h-100 vw-100"
@@ -37,8 +38,10 @@
         <div
           class="container-fluid p-0 .d-flex justify-content-between align-items-center"
         >
+        <!-- navbar section title-->
           <div class="title">
             <a class="navbar-brand" href="#">Tasky Application</a>
+            <!-- hamburger icon for mobile screens -->
             <button
               class="navbar-toggler"
               type="button"
@@ -51,7 +54,7 @@
               <span class="navbar-toggler-icon"></span>
             </button>
           </div>
-
+          <!-- navbar item section -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex w-100">
               <li class="nav-item">
@@ -71,10 +74,13 @@
         </div>
       </nav>
     </section>
+    <!-- navigation bar section ends here -->
 
+    <!-- search and add Task section -->
     <section
       class="search_container d-flex flex-column justify-content-center align-items-center vh-20 w-100 gap-5"
     >
+    <!-- search input container -->
       <div class="input_container w-50">
         <div class="input-group shadow rounded">
           <input
@@ -84,7 +90,7 @@
             aria-label="Recipient's username"
             aria-describedby="button-addon2"
           />
-
+          <!-- search button container -->
           <button class="btn btn-outline" type="submit" id="button-addon2">
             <i class="fa-solid fa-magnifying-glass me-1"></i>
             Search
@@ -92,6 +98,7 @@
         </div>
       </div>
 
+      <!-- modal section -->
       <div class="modal_container">
         <!-- Button trigger modal -->
         <button
@@ -114,10 +121,14 @@
         >
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
+
+              <!-- modal header -->
               <div class="modal-header">
                 <h1 class="modal-title fs-5" id="exampleModalLabel">
                   Tasky Application
                 </h1>
+
+                <!-- modal close button -->
                 <button
                   type="button"
                   class="btn-close"
@@ -125,11 +136,15 @@
                   aria-label="Close"
                 ></button>
               </div>
+
+              <!-- modal body -->
               <div class="modal-body">
                 <form>
+
+                  <!-- input tab for card image url -->
                   <div class="mb-3">
                     <label for="imageUrl" class="form-label"
-                      >Enter Your Task</label
+                      >Enter Image URL</label
                     >
                     <input
                       type="url"
@@ -141,6 +156,8 @@
                       This image will be displayed on the card
                     </div>
                   </div>
+
+                  <!-- input tab for card title -->
                   <div class="mb-3">
                     <label for="taskTitle" class="form-label"
                       >Enter Your Task</label
@@ -155,6 +172,8 @@
                       This will be displayed at the top of the card
                     </div>
                   </div>
+
+                  <!-- textbox for Description-->
                   <div class="mb-3">
                     <label for="task_description" class="form-label"
                       >Task Description</label
@@ -167,7 +186,11 @@
                   </div>
                 </form>
               </div>
+
+              <!-- modal footer -->
               <div class="modal-footer">
+
+                <!-- modal close btn -->
                 <button
                   type="button"
                   class="btn btn-secondary"
@@ -175,6 +198,8 @@
                 >
                   Close
                 </button>
+
+                <!-- modal save changes btn -->
                 <button type="button" class="btn btn-primary">
                   Save changes
                 </button>
@@ -182,10 +207,15 @@
             </div>
           </div>
         </div>
+        <!-- modal ends here -->
       </div>
+      <!-- modal container ends here-->
     </section>
+    <!-- search and add Task section ends here -->
 
+    <!-- cards container -->
     <section class="card_container w-100 h-auto">
+      <!-- all cards present in here -->
       <div class="task__contents"></div>
     </section>
   </body>
