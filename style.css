@@ -55,6 +55,12 @@
   padding: 3rem 13rem;
 }
 
+.card-body{
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
 
 @media screen and (max-width: 720px) {
 
