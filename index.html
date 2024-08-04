@@ -28,7 +28,7 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
+  <body onload="loadInitialData()">
     <!-- navigation bar section starts here-->
     <section class="navbar__container p-0 m-0">
       <nav
@@ -200,7 +200,7 @@
                 </button>
 
                 <!-- modal save changes btn -->
-                <button type="button" class="btn btn-primary">
+                <button type="button" class="btn btn-primary" onclick="handleSubmit()">
                   Save changes
                 </button>
               </div>
